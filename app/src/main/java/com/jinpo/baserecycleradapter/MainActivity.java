@@ -29,17 +29,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        demoListAdapter=new DemoListAdapter(this,null);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(demoListAdapter);
+//        demoListAdapter=new DemoListAdapter(this,null);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setAdapter(demoListAdapter);
     }
 
 
     private void initData() {
-        demoList=new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            demoList.add("这是列表第"+(i+1)+"项！");
-        }
-        demoListAdapter.setmData(demoList);
+//        demoList=new ArrayList<>();
+//        for (int i = 0; i < 10; i++) {
+//            demoList.add("这是列表第"+(i+1)+"项！");
+//        }
+//        demoListAdapter.setmData(demoList);
     }
 }

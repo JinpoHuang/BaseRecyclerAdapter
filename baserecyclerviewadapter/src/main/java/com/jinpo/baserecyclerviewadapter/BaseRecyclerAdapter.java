@@ -1,4 +1,4 @@
-package com.jinpo.baserecycleradapter.baseRecyclerAdapter;
+package com.jinpo.baserecyclerviewadapter;
 
 import android.app.Activity;
 import android.content.Context;
