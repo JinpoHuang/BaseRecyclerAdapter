@@ -3,6 +3,9 @@ package com.jinpo.baserecycleradapter;
 import android.content.Context;
 import android.widget.TextView;
 
+import com.jinpo.baserecyclerviewadapter.BaseRecyclerAdapter;
+import com.jinpo.baserecyclerviewadapter.RecyclerViewHolder;
+
 import java.util.List;
 
 /**
@@ -12,20 +15,20 @@ import java.util.List;
  * Function:
  */
 
-public class DemoListAdapter {
+public class DemoListAdapter extends BaseRecyclerAdapter<String>{
 
-//    public DemoListAdapter(Context ctx, List<String> list) {
-//        super(ctx, list);
-//    }
-//
-//    @Override
-//    protected int getLayoutID() {
-//        return R.layout.item_demo_list;
-//    }
-//
-//    @Override
-//    protected void bindData(RecyclerViewHolder holder, String item, int position) {
-//        TextView textView=holder.getTextView(R.id.tv_demo_item);
-//        textView.setText(item);
-//    }
+    public DemoListAdapter(Context ctx, List<String> list) {
+        super(ctx, list);
+    }
+
+    @Override
+    protected int getLayoutID() {
+        return R.layout.item_demo_list;
+    }
+
+    @Override
+    protected void bindData(RecyclerViewHolder holder, String item, int position) {
+        TextView textView=holder.getTextView(R.id.tv_demo_item);
+        textView.setText(item);
+    }
 }
