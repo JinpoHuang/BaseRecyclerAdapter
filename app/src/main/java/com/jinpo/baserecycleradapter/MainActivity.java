@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,5 +42,6 @@ public class MainActivity extends AppCompatActivity {
             demoList.add("这是列表第"+(i+1)+"项！");
         }
         demoListAdapter.setmData(demoList);
+        Log.d("MainActivity","1.1.2的修改");
     }
 }
